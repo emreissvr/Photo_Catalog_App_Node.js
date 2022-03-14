@@ -1,0 +1,32 @@
+{
+  "name": "pcat-project",
+  "version": "1.0.0",
+  "description": "Photo Catalog",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emreissvr/Photo_Catalog_App_Node.js.git"
+  },
+  "keywords": [
+    "photo",
+    "video",
+    "app",
+    "camera",
+    "catalog",
+    "object",
+    "view",
+    "image"
+  ],
+  "bugs": {
+    "url": "https://github.com/emreissvr/Photo_Catalog_App_Node.js/issues"
+  },
+  "homepage": "https://github.com/emreissvr/Photo_Catalog_App_Node.js#readme",
+  "author": "Emre İşsever",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "2.5.1"
+  }
+}
