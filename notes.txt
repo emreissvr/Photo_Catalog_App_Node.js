@@ -1,0 +1,45 @@
+** git status 
+** git add . 
+** git commit -m "......"
+** git push 
+** npm i express --save
+** --save--exact dersen kesin olarak o sürümü kullanır ama normal kurarsan "^" solda şu işaret olur bu sürüm değişebilir demek rs   
+** node app --> çalıştır 
+** npm i nodemon 
+
+
+** app.use(express.static("public"));
+** express.static() bir middleware fonksiyondur 
+** middleware nedir? --> request-response döngüsü içindeki herşeye middleware denir
+** aslında app.get() fonksiyonu da bir middleware'dir 
+
+
+**** Şablonumuzu baz alarak ilgili modelimizi oluşturucaz modelimiz veritabanındaki collection ve dökümanımızı oluşturucak
+** mongoose bir "ODM" aracıdır --> Object Document Mapping 
+
+**** "use pcat-test-db" --> veritabanı oluşturur
+** "db.photos.insertOne(
+  {title: "Photo 1", description: "Photo description lorem ipsum", qty:20}
+)"
+
+
+** "db.photos.find()"
+** "show collections"
+** "db.photos.insertMany([
+  {title: "Photo 2", description: "Photo 2 description", qty:50},
+  {title: "Photo 3", description: "Photo 3 description", qty:150}
+])"
+** "db.photos.updateOne( {title: "Photo 1"}, { $set: {qty:222}} )"
+** "db.photos.deleteOne({qty: 50})"
+
+
+
+**** form yoluyla tarayıcıya gönderilen veriyi okuyamamışız bunun için önceden "bodyparser" kullanırdık
+** app.use(express.urlencoded({extended=true}));  ---> url'deki datayı okur
+** app.use(express.json()); --> url den gelen datayı json'a döndürür
+** bu iki middleware kullanılır
+** formadan gelen bilgiler tarayıcıdan alınıp veritabanına yerleştirilecek
+
+**** MODEL AND DYNAMİC CONTENT
+** addphoto dan gelen foto bilgilerini mongoose model yardımıyla mongoDB'e veritabanına yazdırıcaz
+** 
